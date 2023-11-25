@@ -4,9 +4,15 @@
 
 ![Block diagram](block.jpg)
 
-## Flow Chart
+## Flow Charts
 
-![Flow Chart](flow.jpg)
+### Pico 1
+
+![Pico 1 Flow Chart](pico1flow.jpg)
+
+### Pico 2
+
+![Pico 2 Flow Chart](pico2flow.jpg)
 
 ## Contributors
 
