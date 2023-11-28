@@ -1,0 +1,8 @@
+build/
+code_review/
+*.out
+pico-nexmon/pico-sdk/
+.vscode/settings.json
+pico-sniffer/nexmon/
+pico-sniffer/pico-sdk/
+*.zip
