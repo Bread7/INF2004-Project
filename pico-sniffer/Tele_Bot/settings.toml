@@ -1,0 +1,6 @@
+# settings.toml
+WIFI_SSID="PRIME8"
+WIFI_PASSWORD="D3f4Lt99"
+
+# Telegram
+botToken = "6862736291:AAFMDYop7J75Tq93puo8UxIswa2xkMXJadw"
