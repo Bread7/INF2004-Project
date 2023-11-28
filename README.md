@@ -30,6 +30,14 @@ Master Pico W connects to Wi-Fi, interacts with the Telegram API for communicati
 
 ## Set Up Guide
 
+### Hardware Requirements
+
+- 2x Raspberry Pi Pico W
+- 1x Maker Pi Board
+- 3x Male-to-Female cable (Plug into GPIO pins 4, 5 and ground for both picos)
+
+![Picos Set Up](pico.jpg)
+
 ### Build Nexmon
 
 Unzip nexmon file into current directory
@@ -47,11 +55,22 @@ set(NEXMON_ROOT "path/to/nexmon_root")
 - Ensure development environment has been configured with Pico SDK
 [Example configuration for MacOS](https://github.com/Bread7/Pico-SDK-Setup-MacOS)
 
-### Build the file
+### Build the file (1st Pico)
 
 - Compile cmake using Pico SDK into UF2 file
 - Main file will be `integrated_monitor.c` into `integrated_monitor.uf2`
 - File can be found in the build/ folder
+- Set Pi Pico in BOOTSEL mode and place UF2 file inside
+
+### Set Up MicroPython Environment (2nd Pico)
+
+- Follow this guide, [Thonny for Pi Pico](https://projects.raspberrypi.org/en/projects/getting-started-with-the-pico/2) to set up the environment
+- Use Thonny to load MicroPython Firmware into Pi Pico W
+
+### Change MicroPython Environment Variables
+
+- In `settings.toml`, edit the `botToken` variable using your own botToken derived from Telegram Botfather
+- In `settings.toml`, edit the `WIFI_SSID` and `WIFI_PASSWORD` variable using your own hotspot or nearby AP connections
 
 ### References for Project
 
